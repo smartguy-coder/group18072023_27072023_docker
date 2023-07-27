@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  weather:
+    build: weather_app
+    restart: always
+    volumes:
+      - .\weather_app\statistic:/my_code/statistic
